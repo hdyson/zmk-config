@@ -30,20 +30,7 @@
             &none     &kp Q      &kp W      &kp E       &kp R       &kp T                                            &kp Y       &kp U       &kp I      &kp O      &kp P    &none
             &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                            &mt RSHFT H &mt RCTRL J &mt RALT K &kp RGUI L &kp SEMI &none
             &none     &kp Z      &kp X      &kp C       &kp V       &kp B     &none     &none      &none   &none     &kp N       &kp M       &kp COMMA  &kp DOT    &kp FSLH &none
-                                            &none       &none       &kp ESC &kp SPACE &kp TAB    &kp RET &kp BSPC  &kp DEL     &none       &none
-            >;
-        };
-        movement_layer {
-            // -----------------------------------------------------------------------------------------------------------------------------------
-            // |     |     |      |      |       |      |                                            |      | PASTE | COPY | CUT  | UNDO  |      |
-            // |     | GUI | ALT  | CTRL | SHIFT |      |                                            |      | LEFT  | DOWN | UP   | RIGHT |      |
-            // |     |     |      |      |       |      |      |      |      |      |         |      | INS  | HOME  | PGDN | PGUP | END   |      |
-            //                    |      |       |      |      |      |      | RET  | BKSPACE | DEL  |      |       |      |
-            bindings = <
-            &trans &trans   &trans   &trans    &trans    &trans                                       &trans  &kp K_PASTE &kp K_COPY  &kp K_CUT &kp K_UNDO &trans
-            &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans                                       &trans  &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT  &trans
-            &trans &trans   &trans   &trans    &trans    &trans &trans &trans        &trans  &trans   &kp INS &kp HOME    &kp PG_DN   &kp PG_UP &kp END    &trans
-                                     &trans    &trans    &trans &trans &trans        &kp RET &kp BSPC &kp DEL &none       &none
+                                            &none       &none       &lt 1 ESC &kp SPACE &kp TAB    &kp RET &kp BSPC  &kp DEL     &none       &none
             >;
         };
         transparent_layer {
