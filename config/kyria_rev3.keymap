@@ -28,7 +28,7 @@
             //                       | n/a    | n/a     | ESC | SPACE | TAB |  | RET | BKSPACE | DEL | n/a     | n/a    |
             bindings = <
             &none     &kp Q      &kp W      &kp E       &kp R       &kp T                                            &kp Y       &kp U       &kp I      &kp O      &kp P    &none
-            &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                            &mt RSHFT H &mt RCTRL J &mt RALT K &kp RGUI L &kp SEMI &none
+            &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                            &mt RSHFT H &mt RCTRL J &mt RALT K &mt RGUI L &kp SEMI &none
             &none     &kp Z      &kp X      &kp C       &kp V       &kp B     &none     &none      &none   &none     &kp N       &kp M       &kp COMMA  &kp DOT    &kp FSLH &none
                                             &none       &none       &lt 1 ESC &kp SPACE &kp TAB    &kp RET &kp BSPC  &kp DEL     &none       &none
             >;
@@ -47,6 +47,19 @@
                                      &trans    &trans    &trans &trans &trans        &kp RET &kp BSPC &kp DEL &none       &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+        transparent_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
+            // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
+            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            bindings = <
+            &trans &trans &trans &trans &trans &trans                                    &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans                                    &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+                                 &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+            >;
         };
         bluetooth_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
