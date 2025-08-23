@@ -27,10 +27,10 @@
             // | n/a | Z     | X     | C      | V       | B   | n/a   | n/a |  | n/a | n/a     | N   | M       |  ,     |  .    |   /   |  n/a |
             //                       | n/a    | n/a     | ESC | SPACE | TAB |  | RET | BKSPACE | DEL | n/a     | n/a    |
             bindings = <
-            &none     &kp Q      &kp W      &kp E       &kp R       &kp T                                          &kp Y       &kp U       &kp I      &kp O      &kp P    &none
-            &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                          &mt RSHFT H &mt RCTRL J &mt RALT K &kp RGUI L &kp SEMI &none
-            &none     &kp Z      &kp X      &kp C       &kp V       &kp B   &none     &none      &none   &none     &kp N       &kp M       &kp COMMA  &kp DOT    &kp FSLH &none
-                                            &none       &none       &lt 1 ESC &kp SPACE &kp TAB    &kp RET &kp BSPC  &kp DEL     &none       &none
+            &none     &kp Q      &kp W      &kp E       &kp R       &kp T                                            &kp Y       &kp U       &kp I      &kp O      &kp P    &none
+            &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                            &mt RSHFT H &mt RCTRL J &mt RALT K &kp RGUI L &kp SEMI &none
+            &none     &kp Z      &kp X      &kp C       &kp V       &kp B     &none     &none      &none   &none     &kp N       &kp M       &kp COMMA  &kp DOT    &kp FSLH &none
+                                            &none       &none       &kp ESC &kp SPACE &kp TAB    &kp RET &kp BSPC  &kp DEL     &none       &none
             >;
         };
         movement_layer {
