@@ -33,6 +33,19 @@
                                             &none       &none       &kp ESC &kp SPACE &kp TAB    &kp RET &kp BSPC  &kp DEL     &none       &none
             >;
         };
+        transparent_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
+            // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
+            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            bindings = <
+            &trans &trans &trans &trans &trans &trans                                    &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans                                    &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+                                 &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
+            >;
+        };
         bluetooth_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
