@@ -33,9 +33,9 @@
             // | n/a | Z     | X     | C      | V       | B   | n/a   | n/a |      | n/a | n/a     | N   | M       |  ,     |  .    |   /   |  n/a |
             //                       | n/a    | n/a     | ESC | SPACE | TAB |      | RET | BKSPACE | DEL | n/a     | n/a    |
             bindings = <
-            &none     &kp Q      &kp W      &kp E       &kp R       &kp T                                                     &kp Y       &kp U       &kp I      &kp O      &kp P    &none
-            &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                                     &mt RSHFT H &mt RCTRL J &mt RALT K &mt RGUI L &kp SEMI &none
-            &none     &kp Z      &kp X      &kp C       &kp V       &kp B     &none       &none          &none     &none      &kp N       &kp M       &kp COMMA  &kp DOT    &kp FSLH &none
+            &none     &kp Q      &kp W      &kp E       &kp R       &kp T                                                     &kp Y       &kp U       &kp I       &kp O      &kp P          &none
+            &none     &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &kp G                                                     &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L &mt RGUI SEMI  &none
+            &none     &kp Z      &kp X      &kp C       &kp V       &kp B     &none       &none          &none     &none      &kp N       &kp M       &kp COMMA   &kp DOT    &kp FSLH &none
                                             &none       &none       &lt 3 ESC &lt 1 SPACE &lt 2 TAB      &lt 5 RET &lt 4 BSPC &lt 6 DEL   &none       &none
             >;
         };
@@ -88,11 +88,11 @@
 
 // layer 4
         numeric_layer {
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // |       |   [  |   7  |  8   |  9   |  ]   |                                    |       |      |      |      |      |      |
-            // |       |   ;  |   4  |  5   |  6   |  =   |                                    | SHIFT | CTRL | ALT  | GUI  |      |      |
-            // |       |   `  |   1  |  2   |  3   |  \   |      |      |        |      |      |       |      |      |      |      |      |
-            //                       |      |      |  .   |  0   |   -  |        |      |      |       |      |      |
+            // -----------------------------------------------------------------------------------------------------------------------------
+            // |       |   [  |   7  |  8   |  9   |  ]   |                                    |       |       |      |      |      |      |
+            // |       |   ;  |   4  |  5   |  6   |  =   |                                    |       | SHIFT | CTRL | ALT  | GUI  |      |
+            // |       |   `  |   1  |  2   |  3   |  \   |      |      |        |      |      |       |       |      |      |      |      |
+            //                       |      |      |  .   |  0   |   -  |        |      |      |       |       |      |
             bindings = <
             &trans &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT                                        &trans &trans    &trans     &trans    &trans   &trans
             &trans &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL                                       &trans &kp RSHFT &kp RCTRL  &kp RALT  &kp RGUI &trans
@@ -103,11 +103,11 @@
 
 //layer 5
         symbol_layer {
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // |       |  {   |  &   |  *   |  (   |  }   |                                    |       |      |      |      |      |      |
-            // |       |  :   |  $   |  %   |  ^   |  +   |                                    | SHIFT | CTRL | ALT  | GUI  |      |      |
-            // |       |  ~   |  !   |  @   |  #   |  |   |      |      |        |      |      |       |      |      |      |      |      |
-            //                       |      |      |  (   |  )   |  _   |        |      |      |       |      |      |
+            // -----------------------------------------------------------------------------------------------------------------------------
+            // |       |  {   |  &   |  *   |  (   |  }   |                                    |       |      |       |      |      |      |
+            // |       |  :   |  $   |  %   |  ^   |  +   |                                    |       | SHIFT | CTRL | ALT  | GUI  |      |
+            // |       |  ~   |  !   |  @   |  #   |  |   |      |      |        |      |      |       |      |       |      |      |      |
+            //                       |      |      |  (   |  )   |  _   |        |      |      |       |      |       |
             bindings = <
             &trans &kp LBRC  &kp AMPS &kp STAR  &kp LPAR  &kp RBRC                                       &trans &trans    &trans    &trans   &trans   &trans
             &trans &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS                                       &trans &kp RSHFT &kp RCTRL &kp RALT &kp RGUI &trans
@@ -118,11 +118,11 @@
 
 //layer 6
         function_keys_layer {
-            // ----------------------------------------------------------------------------------------------------------------------------------
-            // |       |  f12 |  f7  | f8       |  f9  | PrtSc  |                                    |       |      |      |      |      |      |
-            // |       |  f11 |  f4  | f5       |  f6  | ScrlLck|                                    | SHIFT | CTRL | ALT  | GUI  |      |      |
-            // |       |  f10 |  f1  | f2       |  f3  | Pause  |      |      |        |      |      |       |      |      |      |      |      |
-            //                       | app menu | SPC  | TAB    |      |      |        |      |      |       |      |      |
+            // -----------------------------------------------------------------------------------------------------------------------------------
+            // |       |  f12 |  f7  | f8       |  f9  | PrtSc  |                                    |       |      |       |      |      |      |
+            // |       |  f11 |  f4  | f5       |  f6  | ScrlLck|                                    |       | SHIFT | CTRL | ALT  | GUI  |      |
+            // |       |  f10 |  f1  | f2       |  f3  | Pause  |      |      |        |      |      |       |      |       |      |      |      |
+            //                       | app menu | SPC  | TAB    |      |      |        |      |      |       |      |       |
             bindings = <
             &trans &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN                                              &trans &trans &trans &trans &trans &trans
             &trans &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK                                               &trans &trans &trans &trans &trans &trans
