@@ -1,1 +1,3 @@
-Contains my configuration for zmk for a kyria rev 3.1 split keyboard using nice!nano v2 microcontrollers.  Layout defined in [[./config/kyria_rev3.keymap][keymap file]] with human readable(-ish) layout in comments.
+Contains my configuration for zmk for a kyria rev 3.1 split keyboard using
+nice!nano v2 microcontrollers.  Layouts defined in [[./config/kyria_rev3.keymap][keymap file]] with human
+readable(-ish) layout for each layer in comments.
