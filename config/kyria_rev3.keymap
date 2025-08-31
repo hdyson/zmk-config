@@ -35,12 +35,12 @@
 
 / {
     behaviors {
-        lt: layer_tap {
+        msclt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&mo>, <&msc>;
             display-name = "Layer-Tap";
         };
     };
@@ -61,7 +61,7 @@
             &kp C_PP     &kp Q      &kp W      &kp E       &kp R          &kp T                                                                    &kp Y             &kp U          &kp I       &kp O      &kp P          &none
             &msc SCRL_UP &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F    &kp G                                                                    &kp H             &mt RSHFT J    &mt RCTRL K &mt RALT L &mt RGUI APOS  &none
             &mkp MCLK    &kp Z      &kp X      &kp C       &kp V          &kp B               &none          &none      &none     &mo _BLUETOOTH   &kp N             &kp M          &kp COMMA   &kp DOT    &kp FSLH &none
-                                               &none       &lt _MOUSE ESC &lt _MOVEMENT SPACE &lt _MEDIA TAB &none      &none     &lt _SYMBOLS RET &lt _NUMBERS BSPC &lt _FKEYS DEL &none
+                                               &none       &msclt _MOUSE ESC &lt _MOVEMENT SPACE &lt _MEDIA TAB &none      &none     &lt _SYMBOLS RET &lt _NUMBERS BSPC &lt _FKEYS DEL &none
             >;
         };
 
