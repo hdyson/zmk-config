@@ -120,16 +120,16 @@
         };
 
         function_keys_layer {
-            // ------------------------------------------------------------------------------------------------------------------------------
-            // |       |  f12 |  f7  | f8 |  f9      | PrtSc  |                                 |       |       |      |      |      |      |
-            // |       |  f11 |  f4  | f5 |  f6      | ScrlLck|                                 |       | SHIFT | CTRL | ALT  | GUI  |      |
-            // |       |  f10 |  f1  | f2 |  f3      | Pause  |     |      |      |      |      |       |       |      |      |      |      |
-            //                       |    | app menu | SPC    | TAB |      |      |      |      |       |       |      |      |
+            // ----------------------------------------------------------------------------------------------------------
+            // |       |  f12 |  f7  | f8 |  f9      | PrtSc  |                      |   |       |      |     |     |   |
+            // |       |  f11 |  f4  | f5 |  f6      | ScrlLck|                      |   | SHIFT | CTRL | ALT | GUI |   |
+            // |       |  f10 |  f1  | f2 |  f3      | Pause  |   |   |      |   |   |   |       |      |     |     |   |
+            //                       |    | app menu |        |   |   |      |   |   |   |       |      |     |
             bindings = <
-            &trans &kp F12  &kp F7  &kp F8  &kp F9  &kp PSCRN                                              &trans &trans &trans &trans &trans &trans
-            &trans &kp F11  &kp F4  &kp F5  &kp F6  &kp SLCK                                               &trans &trans &trans &trans &trans &trans
-            &trans &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK &trans    &trans         &trans &trans &trans &trans &trans &trans &trans &trans
-                                    &trans  &trans  &kp K_APP       &kp SPACE &kp TAB        &trans &trans &trans &trans &trans
+            &trans &kp F12  &kp F7  &kp F8  &kp F9    &kp PSCRN                                          &trans &trans &trans &trans &trans &trans
+            &trans &kp F11  &kp F4  &kp F5  &kp F6    &kp SLCK                                           &trans &trans &trans &trans &trans &trans
+            &trans &kp F10  &kp F1  &kp F2  &kp F3    &kp PAUSE_BREAK &trans &trans        &trans &trans &trans &trans &trans &trans &trans &trans
+                                    &trans  &kp K_APP &trans          &trans &trans        &trans &trans &trans &trans &trans
             >;
         };
 
